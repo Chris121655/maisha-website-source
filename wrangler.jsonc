@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "maisha-website",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "maishahub.co.za", "custom_domain": true },
+    { "pattern": "www.maishahub.co.za", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}
